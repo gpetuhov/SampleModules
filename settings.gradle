@@ -1,1 +1,1 @@
-include ':app', ':mainactivitylibrary'
+include ':app', ':mainactivitylibrary', ':MessageProvider'
