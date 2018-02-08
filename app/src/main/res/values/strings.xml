@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SampleModules</string>
+
+    <!--If string resource with the same id is declared both in app and mainactivity library modules,
+    the one from the app module will be used-->
+    <string name="hello_world">Message from the app!</string>
 </resources>

@@ -7,5 +7,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme">
+
+        <!--Here we use activity directly from the module MainActivityLibrary.
+        We even don't have to extend MainActivtiy class unless there is a need
+        to override its methods-->
+        <activity android:name="com.gpetuhov.android.mainactivitylibrary.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
 </manifest>
