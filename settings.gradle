@@ -1,1 +1,1 @@
-include ':app', ':mainactivitylibrary', ':MessageProvider'
+include ':app', ':mainactivitylibrary', ':MessageProvider', ':toaster'

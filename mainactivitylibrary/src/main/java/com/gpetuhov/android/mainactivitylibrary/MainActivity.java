@@ -2,9 +2,9 @@ package com.gpetuhov.android.mainactivitylibrary;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.gpetuhov.android.messageprovider.MessageProvider;
+import com.gpetuhov.android.toaster.Toaster;
 
 
 // This activity class is declared inside Android library module
@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
 
         String message = new MessageProvider(1).getMessage();
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        Toaster.show(this, message);
     }
 }
